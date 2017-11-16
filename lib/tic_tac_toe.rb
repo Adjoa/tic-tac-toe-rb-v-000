@@ -106,14 +106,13 @@ end
 def play(board)
   until over?(board)
     turn(board)
-    if won?(board)
-      return "Congratulations #{winner(board)}"
-    else draw?(board)
-      return "Cat\'s Game!"
-    end
   end
-
-
+  
+# if won?(board)
+#   return "Congratulations #{winner(board)}"
+# else draw?(board)
+#   return "Cat\'s Game!"
+# end
 end
 
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
