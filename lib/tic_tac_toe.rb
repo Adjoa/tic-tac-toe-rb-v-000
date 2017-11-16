@@ -123,7 +123,9 @@ def play(board)
     puts "Cat\'s Game!"
   end
 
-  
+  if !over?(board)
+    play(board)
+  end
 
 #   won = won?(board)
 #   draw = draw?(board)
