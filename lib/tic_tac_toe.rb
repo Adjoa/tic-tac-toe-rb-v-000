@@ -107,8 +107,9 @@ def play(board)
   until over?(board)
     turn(board)
   end
+  puts "winner: #{winner(board)}"
 end
-#
+
 #   if won?(board)
 #     return "Congratulations #{winner(board)}"
 #   else draw?(board)
@@ -116,5 +117,5 @@ end
 #   end
 # end
 
-# board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-# play(board)
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+play(board)
