@@ -103,10 +103,11 @@ def winner(board)
   return won?(board) ? board[won?(board)[0]] : nil
 end
 
-# def play(board)
-#   until over?(board)
-#     turn(board)
-#   end
+def play(board)
+  until over?(board)
+    turn(board)
+  end
+end
 #
 #   if won?(board)
 #     return "Congratulations #{winner(board)}"
