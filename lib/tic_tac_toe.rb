@@ -107,7 +107,7 @@ end
 #   until over?(board)
 #     turn(board)
 #   end
-#   
+#
 #   if won?(board)
 #     return "Congratulations #{winner(board)}"
 #   else draw?(board)
