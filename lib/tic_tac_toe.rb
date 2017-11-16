@@ -116,13 +116,3 @@ def play(board)
     puts "Cat\'s Game!"
   end
 end
-
-#   if won?(board)
-#     return "Congratulations #{winner(board)}"
-#   else draw?(board)
-#     return "Cat\'s Game!"
-#   end
-# end
-
-# board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-# play(board)
