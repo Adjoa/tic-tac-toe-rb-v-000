@@ -115,16 +115,15 @@ def play(board)
   # end
 
   turn(board)
-  if won?(board)
-    puts "Congratulations #{current_player(board)}!"
-  end
+  
+  if over?(board)
+    if won?(board)
+      puts "Congratulations #{current_player(board)}!"
+    end
 
-  if draw?(board)
-    puts "Cat\'s Game!"
-  end
-
-  if !over?(board)
-    play(board)
+    if draw?(board)
+      puts "Cat\'s Game!"
+    end
   end
 
 #   won = won?(board)
