@@ -103,17 +103,17 @@ def winner(board)
   return won?(board) ? board[won?(board)[0]] : nil
 end
 
-def play(board)
-  until over?(board)
-    turn(board)
-  end
-  
-# if won?(board)
-#   return "Congratulations #{winner(board)}"
-# else draw?(board)
-#   return "Cat\'s Game!"
+# def play(board)
+#   until over?(board)
+#     turn(board)
+#   end
+#   
+#   if won?(board)
+#     return "Congratulations #{winner(board)}"
+#   else draw?(board)
+#     return "Cat\'s Game!"
+#   end
 # end
-end
 
-board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-play(board)
+# board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+# play(board)
