@@ -114,19 +114,19 @@ def play(board)
   #   tell the players it has been a draw
   # end
 
-  turn(board)
-  
-  if over?(board)
-    if won?(board)
-      puts "Congratulations #{current_player(board)}!"
-    end
-
-    if draw?(board)
-      puts "Cat\'s Game!"
-    end
+  until over?(board)
+    turn(board)
   end
 
-#   won = won?(board)
+
+#   if won?(board)
+#     puts "Congratulations #{current_player(board)}!"
+#   end
+# 
+#   if draw?(board)
+#     puts "Cat\'s Game!"
+#   end
+# #   won = won?(board)
 #   draw = draw?(board)
 #
 #   if !over?(board)
